@@ -1,0 +1,61 @@
+{
+  "name": "pytrends-alternative",
+  "version": "1.0.1",
+  "description": "Managed Google Trends client for JavaScript/TypeScript. History, growth, and 30+ other sources via the Trends API. The modern alternative to dead scraper packages.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --sourcemap --external trendsapi",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "pytrends",
+    "pytrends-alternative",
+    "google-trends",
+    "google-trends-api",
+    "trendsapi",
+    "seo",
+    "keyword-research",
+    "typescript"
+  ],
+  "author": "Trends API <hello@trendsapi.ai>",
+  "license": "MIT",
+  "homepage": "https://trendsapi.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trendsapi-ai/pytrends-alternative.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trendsapi-ai/pytrends-alternative/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "trendsapi": "^1.0.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
