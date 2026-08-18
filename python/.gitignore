@@ -1,12 +1,11 @@
-﻿dist/
-node_modules/
-*.tgz
-*.log
-.env
-.DS_Store
 __pycache__/
+*.py[cod]
 *.egg-info/
 .venv/
+venv/
+dist/
+.env
 .pypirc
 .pytest_cache/
 .mypy_cache/
+.DS_Store

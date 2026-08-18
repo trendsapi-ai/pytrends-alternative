@@ -2,13 +2,14 @@
 
 Managed Google Trends client for Python. Drop-in mindset for archived pytrends: history, growth, and 30+ other sources via the Trends API.
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![PyPI](https://img.shields.io/pypi/v/pytrends-alternative.svg)](https://pypi.org/project/pytrends-alternative/) [![npm](https://img.shields.io/npm/v/pytrends-alternative.svg)](https://www.npmjs.com/package/pytrends-alternative)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/pytrends-alternative.svg)](https://pypi.org/project/pytrends-alternative/)
 
 Key: [trendsapi.ai/#get-key](https://trendsapi.ai/#get-key). Full contract: [trendsapi-ai/trendsapi](https://github.com/trendsapi-ai/trendsapi).
 
-## Install
+JS: [`pytrends-alternative`](https://www.npmjs.com/package/pytrends-alternative).
 
-### Python
+## Install
 
 ```bash
 pip install pytrends-alternative
@@ -23,21 +24,7 @@ growth = client.get_growth("electric vehicle", percent_growth=["12M"])
 hot = client.get_live(limit=10)
 ```
 
-### JavaScript
-
-```bash
-npm install pytrends-alternative
-```
-
-```ts
-import { TrendsAPI } from "pytrends-alternative";
-
-const client = new TrendsAPI({ apiKey: process.env.TRENDSAPI_KEY });
-const series = await client.getTimeSeries("electric vehicle");
-const growth = await client.getGrowth("electric vehicle", { percent_growth: ["12M"] });
-const live = await client.getLive({ limit: 10 });
-```
-
+Keyword helpers default to `source: "google search"`. Override `source=` for any other platform. Official full client: [`trendsapi`](https://pypi.org/project/trendsapi/).
 
 ## Mapping
 
@@ -74,7 +61,7 @@ One keyword per request. Five terms in `kw_list` become five calls.
 
 Indexes will not match an old pytrends CSV cell-for-cell. Compare shape and direction, not exact 0-100 values.
 
-Site: [https://trendsapi.ai/trends/pytrends-alternative](https://trendsapi.ai/trends/pytrends-alternative).
+Site: [https://trendsapi.ai/trends/pytrends-alternative](https://trendsapi.ai/trends/pytrends-alternative). GitHub: [trendsapi-ai/pytrends-alternative](https://github.com/trendsapi-ai/pytrends-alternative).
 
 ## License
 
