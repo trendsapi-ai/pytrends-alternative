@@ -6,6 +6,11 @@ General Google JSON (not a migration): [google-trends-api](https://github.com/tr
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Guide](https://img.shields.io/badge/guide-pytrends%20to%20JSON-blue.svg)](https://trendsapi.ai/trends/pytrends-alternative)
+[![npm](https://img.shields.io/npm/v/pytrends-alternative.svg)](https://www.npmjs.com/package/pytrends-alternative)
+
+```bash
+npm install pytrends-alternative
+```
 
 ## Mapping
 
